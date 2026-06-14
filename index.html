@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wooyoung ♡ San</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:50px;
+    padding:80px 20px;
+    overflow-x:hidden;
+
+    background:
+    radial-gradient(circle at top,
+    #2d1b3d 0%,
+    #171024 45%,
+    #0c0913 100%);
+
+    color:white;
+    font-family:'Poppins',sans-serif;
+}
+
+.stars{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+}
+
+.star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:white;
+    border-radius:50%;
+    animation:twinkle 3s infinite;
+}
+
+@keyframes twinkle{
+    50%{
+        opacity:.2;
+    }
+}
+
+.floating-heart{
+    position:fixed;
+    color:rgba(255,255,255,.12);
+    pointer-events:none;
+    z-index:-1;
+    animation:float linear infinite;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(110vh);
+    }
+    to{
+        transform:translateY(-150px);
+    }
+}
+
+.card{
+    width:90%;
+    max-width:850px;
+
+    padding:60px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(14px);
+
+    border-radius:32px;
+
+    box-shadow:
+    0 0 30px rgba(255,255,255,.05),
+    0 0 80px rgba(255,255,255,.03);
+
+    animation:fadeUp 1.5s ease;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.date{
+    font-size:13px;
+    letter-spacing:6px;
+    text-transform:uppercase;
+    color:#f5d9ff;
+    margin-bottom:18px;
+}
+
+h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:4rem;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#e6d9ef;
+    margin-bottom:30px;
+}
+
+.heart{
+    font-size:50px;
+    margin:20px 0 30px;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+.message{
+    max-width:650px;
+    margin:auto;
+    line-height:2;
+    color:#f6eefb;
+    font-size:1.05rem;
+}
+
+.names{
+    margin-top:40px;
+    font-size:2rem;
+    font-family:'Cormorant Garamond',serif;
+}
+
+.footer{
+    margin-top:25px;
+    color:#d6c4e6;
+    font-size:.9rem;
+}
+
+.divider{
+    width:120px;
+    height:1px;
+    background:rgba(255,255,255,.15);
+    margin:10px auto 40px;
+}
+
+.quote{
+    font-style:italic;
+    color:#f3d8ff;
+    margin-top:25px;
+}
+
+@media(max-width:768px){
+
+    .card{
+        padding:40px 25px;
+    }
+
+    h1{
+        font-size:2.8rem;
+    }
+
+    .message{
+        font-size:.95rem;
+    }
+
+    .names{
+        font-size:1.7rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<!-- CAPÍTULO 1 -->
+
+<div class="card">
+
+    <div class="date">
+        14 DE JUNIO
+    </div>
+
+    <h1>Our Story</h1>
+
+    <p class="subtitle">
+        Un pequeño rincón para una historia especial.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="heart">♡</div>
+
+    <div class="message">
+
+        Algunas personas llegan a nuestra vida
+        cuando menos lo esperamos.
+
+        <br><br>
+
+        No anuncian su llegada,
+        no prometen quedarse,
+        pero poco a poco comienzan a ocupar
+        un lugar que nadie más podría llenar.
+
+        <br><br>
+
+        Entre conversaciones, sonrisas
+        y momentos compartidos,
+        se escriben capítulos que merecen ser recordados.
+
+        <br><br>
+
+        Este es uno de ellos.
+
+    </div>
+
+    <div class="names">
+        Wooyoung ♡ San
+    </div>
+
+    <div class="footer">
+        14 de Junio
+    </div>
+
+</div>
+
+<!-- CAPÍTULO 2 -->
+
+<div class="card">
+
+    <div class="date">
+        SIEMPRE TÚ
+    </div>
+
+    <h1>The Reason</h1>
+
+    <p class="subtitle">
+        Algunas historias simplemente estaban destinadas a encontrarse.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="heart">♡</div>
+
+    <div class="message">
+
+        Hay personas que llegan haciendo ruido,
+        y otras que llegan en silencio.
+
+        <br><br>
+
+        Pero son las que permanecen
+        las que terminan convirtiéndose
+        en parte de nosotros.
+
+        <br><br>
+
+        Entre risas, recuerdos y pequeños momentos,
+        nació algo imposible de explicar por completo.
+
+        <br><br>
+
+        Algo que no necesita perfección,
+        porque encuentra belleza incluso
+        en los días más simples.
+
+    </div>
+
+    <div class="quote">
+        "Si volviera a empezar mil veces,
+        volvería a elegir el mismo camino."
+    </div>
+
+    <div class="names">
+        Wooyoung ♡ San
+    </div>
+
+</div>
+
+<!-- CAPÍTULO 3 -->
+
+<div class="card">
+
+    <div class="date">
+        PARA SIEMPRE
+    </div>
+
+    <h1>The Promise</h1>
+
+    <p class="subtitle">
+        Una promesa escrita entre estrellas.
+    </p>
+
+    <div class="divider"></div>
+
+    <div class="heart">♡</div>
+
+    <div class="message">
+
+        Si alguna vez dudas,
+        vuelve a este lugar.
+
+        <br><br>
+
+        Recuerda todas las veces
+        que una sonrisa logró iluminar un día entero.
+
+        <br><br>
+
+        Recuerda cada momento compartido,
+        cada recuerdo guardado
+        y cada emoción que logró quedarse.
+
+        <br><br>
+
+        Porque entre millones de personas,
+        hay algunas que se convierten en hogar.
+
+        <br><br>
+
+        Y entre todas las historias posibles,
+        esta seguirá siendo mi favorita.
+
+    </div>
+
+    <div class="quote">
+        "Te elegiría una y otra vez."
+    </div>
+
+    <div class="names">
+        Wooyoung ♡ San
+    </div>
+
+    <div class="footer">
+        Forever ♡
+    </div>
+
+</div>
+
+<script>
+
+// ESTRELLAS
+
+const starsContainer = document.querySelector('.stars');
+
+for(let i=0;i<150;i++){
+
+    const star = document.createElement('div');
+
+    star.classList.add('star');
+
+    star.style.left = Math.random()*100 + '%';
+    star.style.top = Math.random()*100 + '%';
+
+    star.style.opacity = Math.random();
+
+    star.style.animationDelay =
+    Math.random()*3 + 's';
+
+    starsContainer.appendChild(star);
+
+}
+
+// CORAZONES FLOTANTES
+
+for(let i=0;i<20;i++){
+
+    const heart = document.createElement('div');
+
+    heart.classList.add('floating-heart');
+
+    heart.innerHTML='♡';
+
+    heart.style.left =
+    Math.random()*100 + '%';
+
+    heart.style.fontSize =
+    (15 + Math.random()*35) + 'px';
+
+    heart.style.animationDuration =
+    (10 + Math.random()*12) + 's';
+
+    heart.style.animationDelay =
+    Math.random()*8 + 's';
+
+    document.body.appendChild(heart);
+
+}
+
+</script>
+
+</body>
+</html>
